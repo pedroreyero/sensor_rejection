@@ -2,7 +2,7 @@
 ## Author: Pedro Reyero Santiago
 ## Supervisors: Dr. Erik Wilhelm, Prof. Dr. Christopher Onder
 
-This repository contains the code published with the thesis in runnable form with sample bags collected with the Autonomous Plus2.
+This repository contains the code published with the thesis in runnable form, with sample bags collected with the Autonomous Plus2.
 
 ### Instructions to prepare the workspace (only 1st time):
 1. Clone the repository
