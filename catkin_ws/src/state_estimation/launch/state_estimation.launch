@@ -1,0 +1,17 @@
+<launch>
+  <!-- State estimation -->
+  <!-- 1) Data processing -->
+  <node name="node_data" pkg="state_estimation" type="node_data.py" required="true"/>
+  <!-- 2) Individual sensor rejection algorithms -->
+  <node name="node_exnis" pkg="state_estimation" type="node_exnis.py" required="true"/>
+  <node name="node_tree" pkg="state_estimation" type="node_tree.py" required="true"/>
+  <node name="node_knn" pkg="state_estimation" type="node_knn.py" required="true"/>
+  <node name="node_ffnn" pkg="state_estimation" type="node_ffnn.py" required="true"/>
+  <node name="node_rnn" pkg="state_estimation" type="node_rnn.py" required="true"/>
+  <!-- 3) Voting system (putting together all algorithms) -->
+  <node name="node_voting" pkg="state_estimation" type="node_voting.py" required="true"/>
+
+  <!-- rqt (optional) -->
+  <!--node name="rqt_gui" pkg="rqt_gui" type="rqt_gui"/-->
+
+</launch>

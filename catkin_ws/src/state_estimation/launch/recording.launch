@@ -1,0 +1,7 @@
+<launch>
+
+  <!-- rosbag record -->
+  <node name="bag_record" pkg="rosbag" type="record"
+        args="-o /home/$(env USER)/Downloads/ /rosout /tf /odom /gps /gps_odom /cartographer/tracked_pose /dragonfly_manager/tracked_pose /ins_raw/state /vehicle_speed /reverse_travel /state_estimation/fused_pose /tf_static /tf2_web_republisher/status /state_estimation/processed_data /state_estimation/exnis_decision /state_estimation/tree_decision /state_estimation/knn_decision /state_estimation/ffnn_decision /state_estimation/rnn_decision /state_estimation/voting_decision"/>
+
+</launch>
