@@ -6,7 +6,13 @@ This repository contains the code published with the thesis in runnable form wit
 
 ### Instructions to prepare the workspace (only 1st time):
 1. Clone the repository
+```
+git clone https://github.com/pedroreyero/state_estimation.git
+```
 2. Enter the catkin_ws folder
+```
+cd state_estimation/catkin_ws
+```
 3. Run the following command in the terminal
 ```
 catkin_make
